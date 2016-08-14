@@ -15,6 +15,14 @@
 		ADFF4F4C1D5FF7B600ABB0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFF4F4A1D5FF7B600ABB0B8 /* LaunchScreen.storyboard */; };
 		ADFF4F571D5FF7B600ABB0B8 /* CubeTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F561D5FF7B600ABB0B8 /* CubeTimerTests.m */; };
 		ADFF4F621D5FF7B600ABB0B8 /* CubeTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F611D5FF7B600ABB0B8 /* CubeTimerUITests.m */; };
+		ADFF4F711D5FF88200ABB0B8 /* SeededNumberGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F701D5FF88200ABB0B8 /* SeededNumberGenerator.m */; };
+		ADFF4F741D60140700ABB0B8 /* 2Scrambler.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F731D60140700ABB0B8 /* 2Scrambler.m */; };
+		ADFF4F771D601BCA00ABB0B8 /* scrambler.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F761D601BCA00ABB0B8 /* scrambler.m */; };
+		ADFF4F7B1D60208400ABB0B8 /* CoordCube.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F7A1D60208400ABB0B8 /* CoordCube.m */; };
+		ADFF4F811D6020DF00ABB0B8 /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F801D6020DF00ABB0B8 /* Search.m */; };
+		ADFF4F841D60210E00ABB0B8 /* TwoPhaseScrambler.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F831D60210E00ABB0B8 /* TwoPhaseScrambler.m */; };
+		ADFF4F871D60212800ABB0B8 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F861D60212800ABB0B8 /* Util.m */; };
+		ADFF4F8D1D6021B800ABB0B8 /* CubieCube.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F8C1D6021B800ABB0B8 /* CubieCube.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,22 @@
 		ADFF4F5D1D5FF7B600ABB0B8 /* CubeTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFF4F611D5FF7B600ABB0B8 /* CubeTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeTimerUITests.m; sourceTree = "<group>"; };
 		ADFF4F631D5FF7B600ABB0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFF4F6F1D5FF88200ABB0B8 /* SeededNumberGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeededNumberGenerator.h; sourceTree = "<group>"; };
+		ADFF4F701D5FF88200ABB0B8 /* SeededNumberGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeededNumberGenerator.m; sourceTree = "<group>"; };
+		ADFF4F721D60140700ABB0B8 /* 2Scrambler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 2Scrambler.h; sourceTree = "<group>"; };
+		ADFF4F731D60140700ABB0B8 /* 2Scrambler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 2Scrambler.m; sourceTree = "<group>"; };
+		ADFF4F751D601BCA00ABB0B8 /* scrambler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrambler.h; sourceTree = "<group>"; };
+		ADFF4F761D601BCA00ABB0B8 /* scrambler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scrambler.m; sourceTree = "<group>"; };
+		ADFF4F791D60208400ABB0B8 /* CoordCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordCube.h; sourceTree = "<group>"; };
+		ADFF4F7A1D60208400ABB0B8 /* CoordCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordCube.m; sourceTree = "<group>"; };
+		ADFF4F7F1D6020DF00ABB0B8 /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
+		ADFF4F801D6020DF00ABB0B8 /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search.m; sourceTree = "<group>"; };
+		ADFF4F821D60210E00ABB0B8 /* TwoPhaseScrambler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPhaseScrambler.h; sourceTree = "<group>"; };
+		ADFF4F831D60210E00ABB0B8 /* TwoPhaseScrambler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPhaseScrambler.m; sourceTree = "<group>"; };
+		ADFF4F851D60212800ABB0B8 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		ADFF4F861D60212800ABB0B8 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		ADFF4F8B1D6021B800ABB0B8 /* CubieCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubieCube.h; path = ../CubieCube.h; sourceTree = "<group>"; };
+		ADFF4F8C1D6021B800ABB0B8 /* CubieCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CubieCube.m; path = ../CubieCube.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +129,11 @@
 				ADFF4F401D5FF7B600ABB0B8 /* AppDelegate.m */,
 				ADFF4F421D5FF7B600ABB0B8 /* ViewController.h */,
 				ADFF4F431D5FF7B600ABB0B8 /* ViewController.m */,
+				ADFF4F6F1D5FF88200ABB0B8 /* SeededNumberGenerator.h */,
+				ADFF4F701D5FF88200ABB0B8 /* SeededNumberGenerator.m */,
+				ADFF4F751D601BCA00ABB0B8 /* scrambler.h */,
+				ADFF4F761D601BCA00ABB0B8 /* scrambler.m */,
+				ADFF4F781D60201600ABB0B8 /* scramblers */,
 				ADFF4F451D5FF7B600ABB0B8 /* Main.storyboard */,
 				ADFF4F481D5FF7B600ABB0B8 /* Assets.xcassets */,
 				ADFF4F4A1D5FF7B600ABB0B8 /* LaunchScreen.storyboard */,
@@ -138,6 +167,25 @@
 				ADFF4F631D5FF7B600ABB0B8 /* Info.plist */,
 			);
 			path = CubeTimerUITests;
+			sourceTree = "<group>";
+		};
+		ADFF4F781D60201600ABB0B8 /* scramblers */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF4F8B1D6021B800ABB0B8 /* CubieCube.h */,
+				ADFF4F8C1D6021B800ABB0B8 /* CubieCube.m */,
+				ADFF4F7F1D6020DF00ABB0B8 /* Search.h */,
+				ADFF4F801D6020DF00ABB0B8 /* Search.m */,
+				ADFF4F821D60210E00ABB0B8 /* TwoPhaseScrambler.h */,
+				ADFF4F831D60210E00ABB0B8 /* TwoPhaseScrambler.m */,
+				ADFF4F851D60212800ABB0B8 /* Util.h */,
+				ADFF4F861D60212800ABB0B8 /* Util.m */,
+				ADFF4F721D60140700ABB0B8 /* 2Scrambler.h */,
+				ADFF4F791D60208400ABB0B8 /* CoordCube.h */,
+				ADFF4F7A1D60208400ABB0B8 /* CoordCube.m */,
+				ADFF4F731D60140700ABB0B8 /* 2Scrambler.m */,
+			);
+			name = scramblers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFF4F841D60210E00ABB0B8 /* TwoPhaseScrambler.m in Sources */,
+				ADFF4F811D6020DF00ABB0B8 /* Search.m in Sources */,
+				ADFF4F711D5FF88200ABB0B8 /* SeededNumberGenerator.m in Sources */,
+				ADFF4F771D601BCA00ABB0B8 /* scrambler.m in Sources */,
+				ADFF4F8D1D6021B800ABB0B8 /* CubieCube.m in Sources */,
 				ADFF4F441D5FF7B600ABB0B8 /* ViewController.m in Sources */,
+				ADFF4F7B1D60208400ABB0B8 /* CoordCube.m in Sources */,
 				ADFF4F411D5FF7B600ABB0B8 /* AppDelegate.m in Sources */,
+				ADFF4F871D60212800ABB0B8 /* Util.m in Sources */,
 				ADFF4F3E1D5FF7B600ABB0B8 /* main.m in Sources */,
+				ADFF4F741D60140700ABB0B8 /* 2Scrambler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +554,7 @@
 				ADFF4F681D5FF7B600ABB0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADFF4F691D5FF7B600ABB0B8 /* Build configuration list for PBXNativeTarget "CubeTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +563,7 @@
 				ADFF4F6B1D5FF7B600ABB0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADFF4F6C1D5FF7B600ABB0B8 /* Build configuration list for PBXNativeTarget "CubeTimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +572,7 @@
 				ADFF4F6E1D5FF7B600ABB0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
