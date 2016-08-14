@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADFF4F3E1D5FF7B600ABB0B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F3D1D5FF7B600ABB0B8 /* main.m */; };
+		ADFF4F411D5FF7B600ABB0B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F401D5FF7B600ABB0B8 /* AppDelegate.m */; };
+		ADFF4F441D5FF7B600ABB0B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F431D5FF7B600ABB0B8 /* ViewController.m */; };
+		ADFF4F471D5FF7B600ABB0B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFF4F451D5FF7B600ABB0B8 /* Main.storyboard */; };
+		ADFF4F491D5FF7B600ABB0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFF4F481D5FF7B600ABB0B8 /* Assets.xcassets */; };
+		ADFF4F4C1D5FF7B600ABB0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFF4F4A1D5FF7B600ABB0B8 /* LaunchScreen.storyboard */; };
+		ADFF4F571D5FF7B600ABB0B8 /* CubeTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F561D5FF7B600ABB0B8 /* CubeTimerTests.m */; };
+		ADFF4F621D5FF7B600ABB0B8 /* CubeTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F611D5FF7B600ABB0B8 /* CubeTimerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADFF4F531D5FF7B600ABB0B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADFF4F311D5FF7B600ABB0B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADFF4F381D5FF7B600ABB0B8;
+			remoteInfo = CubeTimer;
+		};
+		ADFF4F5E1D5FF7B600ABB0B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADFF4F311D5FF7B600ABB0B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADFF4F381D5FF7B600ABB0B8;
+			remoteInfo = CubeTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADFF4F391D5FF7B600ABB0B8 /* CubeTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFF4F3D1D5FF7B600ABB0B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADFF4F3F1D5FF7B600ABB0B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADFF4F401D5FF7B600ABB0B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADFF4F421D5FF7B600ABB0B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ADFF4F431D5FF7B600ABB0B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ADFF4F461D5FF7B600ABB0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADFF4F481D5FF7B600ABB0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADFF4F4B1D5FF7B600ABB0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADFF4F4D1D5FF7B600ABB0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFF4F521D5FF7B600ABB0B8 /* CubeTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFF4F561D5FF7B600ABB0B8 /* CubeTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeTimerTests.m; sourceTree = "<group>"; };
+		ADFF4F581D5FF7B600ABB0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFF4F5D1D5FF7B600ABB0B8 /* CubeTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFF4F611D5FF7B600ABB0B8 /* CubeTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeTimerUITests.m; sourceTree = "<group>"; };
+		ADFF4F631D5FF7B600ABB0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADFF4F361D5FF7B600ABB0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFF4F4F1D5FF7B600ABB0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFF4F5A1D5FF7B600ABB0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADFF4F301D5FF7B600ABB0B8 = {
+			isa = PBXGroup;
+			children = (
+				ADFF4F3B1D5FF7B600ABB0B8 /* CubeTimer */,
+				ADFF4F551D5FF7B600ABB0B8 /* CubeTimerTests */,
+				ADFF4F601D5FF7B600ABB0B8 /* CubeTimerUITests */,
+				ADFF4F3A1D5FF7B600ABB0B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADFF4F3A1D5FF7B600ABB0B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF4F391D5FF7B600ABB0B8 /* CubeTimer.app */,
+				ADFF4F521D5FF7B600ABB0B8 /* CubeTimerTests.xctest */,
+				ADFF4F5D1D5FF7B600ABB0B8 /* CubeTimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADFF4F3B1D5FF7B600ABB0B8 /* CubeTimer */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF4F3F1D5FF7B600ABB0B8 /* AppDelegate.h */,
+				ADFF4F401D5FF7B600ABB0B8 /* AppDelegate.m */,
+				ADFF4F421D5FF7B600ABB0B8 /* ViewController.h */,
+				ADFF4F431D5FF7B600ABB0B8 /* ViewController.m */,
+				ADFF4F451D5FF7B600ABB0B8 /* Main.storyboard */,
+				ADFF4F481D5FF7B600ABB0B8 /* Assets.xcassets */,
+				ADFF4F4A1D5FF7B600ABB0B8 /* LaunchScreen.storyboard */,
+				ADFF4F4D1D5FF7B600ABB0B8 /* Info.plist */,
+				ADFF4F3C1D5FF7B600ABB0B8 /* Supporting Files */,
+			);
+			path = CubeTimer;
+			sourceTree = "<group>";
+		};
+		ADFF4F3C1D5FF7B600ABB0B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF4F3D1D5FF7B600ABB0B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADFF4F551D5FF7B600ABB0B8 /* CubeTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF4F561D5FF7B600ABB0B8 /* CubeTimerTests.m */,
+				ADFF4F581D5FF7B600ABB0B8 /* Info.plist */,
+			);
+			path = CubeTimerTests;
+			sourceTree = "<group>";
+		};
+		ADFF4F601D5FF7B600ABB0B8 /* CubeTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF4F611D5FF7B600ABB0B8 /* CubeTimerUITests.m */,
+				ADFF4F631D5FF7B600ABB0B8 /* Info.plist */,
+			);
+			path = CubeTimerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADFF4F381D5FF7B600ABB0B8 /* CubeTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFF4F661D5FF7B600ABB0B8 /* Build configuration list for PBXNativeTarget "CubeTimer" */;
+			buildPhases = (
+				ADFF4F351D5FF7B600ABB0B8 /* Sources */,
+				ADFF4F361D5FF7B600ABB0B8 /* Frameworks */,
+				ADFF4F371D5FF7B600ABB0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CubeTimer;
+			productName = CubeTimer;
+			productReference = ADFF4F391D5FF7B600ABB0B8 /* CubeTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADFF4F511D5FF7B600ABB0B8 /* CubeTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFF4F691D5FF7B600ABB0B8 /* Build configuration list for PBXNativeTarget "CubeTimerTests" */;
+			buildPhases = (
+				ADFF4F4E1D5FF7B600ABB0B8 /* Sources */,
+				ADFF4F4F1D5FF7B600ABB0B8 /* Frameworks */,
+				ADFF4F501D5FF7B600ABB0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADFF4F541D5FF7B600ABB0B8 /* PBXTargetDependency */,
+			);
+			name = CubeTimerTests;
+			productName = CubeTimerTests;
+			productReference = ADFF4F521D5FF7B600ABB0B8 /* CubeTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADFF4F5C1D5FF7B600ABB0B8 /* CubeTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFF4F6C1D5FF7B600ABB0B8 /* Build configuration list for PBXNativeTarget "CubeTimerUITests" */;
+			buildPhases = (
+				ADFF4F591D5FF7B600ABB0B8 /* Sources */,
+				ADFF4F5A1D5FF7B600ABB0B8 /* Frameworks */,
+				ADFF4F5B1D5FF7B600ABB0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADFF4F5F1D5FF7B600ABB0B8 /* PBXTargetDependency */,
+			);
+			name = CubeTimerUITests;
+			productName = CubeTimerUITests;
+			productReference = ADFF4F5D1D5FF7B600ABB0B8 /* CubeTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADFF4F311D5FF7B600ABB0B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Weston Mizumoto";
+				TargetAttributes = {
+					ADFF4F381D5FF7B600ABB0B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					ADFF4F511D5FF7B600ABB0B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = ADFF4F381D5FF7B600ABB0B8;
+					};
+					ADFF4F5C1D5FF7B600ABB0B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = ADFF4F381D5FF7B600ABB0B8;
+					};
+				};
+			};
+			buildConfigurationList = ADFF4F341D5FF7B600ABB0B8 /* Build configuration list for PBXProject "CubeTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADFF4F301D5FF7B600ABB0B8;
+			productRefGroup = ADFF4F3A1D5FF7B600ABB0B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADFF4F381D5FF7B600ABB0B8 /* CubeTimer */,
+				ADFF4F511D5FF7B600ABB0B8 /* CubeTimerTests */,
+				ADFF4F5C1D5FF7B600ABB0B8 /* CubeTimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADFF4F371D5FF7B600ABB0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFF4F4C1D5FF7B600ABB0B8 /* LaunchScreen.storyboard in Resources */,
+				ADFF4F491D5FF7B600ABB0B8 /* Assets.xcassets in Resources */,
+				ADFF4F471D5FF7B600ABB0B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFF4F501D5FF7B600ABB0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFF4F5B1D5FF7B600ABB0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADFF4F351D5FF7B600ABB0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFF4F441D5FF7B600ABB0B8 /* ViewController.m in Sources */,
+				ADFF4F411D5FF7B600ABB0B8 /* AppDelegate.m in Sources */,
+				ADFF4F3E1D5FF7B600ABB0B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFF4F4E1D5FF7B600ABB0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFF4F571D5FF7B600ABB0B8 /* CubeTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFF4F591D5FF7B600ABB0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFF4F621D5FF7B600ABB0B8 /* CubeTimerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADFF4F541D5FF7B600ABB0B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADFF4F381D5FF7B600ABB0B8 /* CubeTimer */;
+			targetProxy = ADFF4F531D5FF7B600ABB0B8 /* PBXContainerItemProxy */;
+		};
+		ADFF4F5F1D5FF7B600ABB0B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADFF4F381D5FF7B600ABB0B8 /* CubeTimer */;
+			targetProxy = ADFF4F5E1D5FF7B600ABB0B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADFF4F451D5FF7B600ABB0B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFF4F461D5FF7B600ABB0B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADFF4F4A1D5FF7B600ABB0B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFF4F4B1D5FF7B600ABB0B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADFF4F641D5FF7B600ABB0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADFF4F651D5FF7B600ABB0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADFF4F671D5FF7B600ABB0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CubeTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Weston-Mizumoto.CubeTimer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADFF4F681D5FF7B600ABB0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CubeTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Weston-Mizumoto.CubeTimer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADFF4F6A1D5FF7B600ABB0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CubeTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Weston-Mizumoto.CubeTimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CubeTimer.app/CubeTimer";
+			};
+			name = Debug;
+		};
+		ADFF4F6B1D5FF7B600ABB0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CubeTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Weston-Mizumoto.CubeTimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CubeTimer.app/CubeTimer";
+			};
+			name = Release;
+		};
+		ADFF4F6D1D5FF7B600ABB0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CubeTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Weston-Mizumoto.CubeTimerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CubeTimer;
+			};
+			name = Debug;
+		};
+		ADFF4F6E1D5FF7B600ABB0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CubeTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Weston-Mizumoto.CubeTimerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CubeTimer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADFF4F341D5FF7B600ABB0B8 /* Build configuration list for PBXProject "CubeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFF4F641D5FF7B600ABB0B8 /* Debug */,
+				ADFF4F651D5FF7B600ABB0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFF4F661D5FF7B600ABB0B8 /* Build configuration list for PBXNativeTarget "CubeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFF4F671D5FF7B600ABB0B8 /* Debug */,
+				ADFF4F681D5FF7B600ABB0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADFF4F691D5FF7B600ABB0B8 /* Build configuration list for PBXNativeTarget "CubeTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFF4F6A1D5FF7B600ABB0B8 /* Debug */,
+				ADFF4F6B1D5FF7B600ABB0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADFF4F6C1D5FF7B600ABB0B8 /* Build configuration list for PBXNativeTarget "CubeTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFF4F6D1D5FF7B600ABB0B8 /* Debug */,
+				ADFF4F6E1D5FF7B600ABB0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADFF4F311D5FF7B600ABB0B8 /* Project object */;
+}
