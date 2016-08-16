@@ -19,10 +19,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *avg5label;
 @property (weak, nonatomic) IBOutlet UILabel *avg12label;
 @property (weak, nonatomic) IBOutlet UILabel *NumSolvesLabel;
+@property (weak, nonatomic) IBOutlet UIButton *DeleteButton;
+@property (weak, nonatomic) IBOutlet UIButton *ResetButton;
 @property int timerCountMillis;
 @property NSString *scrambleType;
 @property (strong, nonatomic) NSTimer *timer;
 @property (strong, nonatomic) NSTimer *startupTimer;
+@property (strong, nonatomic) NSTimer *deleteTimer;
+@property (strong, nonatomic) NSTimer *resetTimer;
 @property (strong, nonatomic) scrambler *scrambleGen;
 @property (strong, nonatomic) NSMutableArray *times;
 @property BOOL timerOn;
@@ -176,18 +180,45 @@
 }
 
 - (IBAction)resetPressed:(id)sender {
+    if (self.timerOn){
+        return;
+    }
+    
+    if ([[self.ResetButton currentTitle] isEqualToString:@"Reset"]){
+        [self.ResetButton setTitle:@"Sure?" forState:UIControlStateNormal];
+        self.resetTimer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(revertResetButton )userInfo:nil repeats:NO];
+        return;
+    }
+    [self.resetTimer invalidate];
     self.times = [[NSMutableArray alloc]init];
     [self.TimeLabel setText:@"0.000"];
     [self updateDisplays];
     [self updateScramble];
+    [self.ResetButton setTitle:@"Reset" forState:UIControlStateNormal];
     
 }
 
+- (void) revertResetButton{
+    [self.ResetButton setTitle:@"Reset" forState:UIControlStateNormal];
+}
+- (void) revertDeleteButton{
+    [self.ResetButton setTitle:@"Delete" forState:UIControlStateNormal];
+}
 - (IBAction)deleteLastPressed:(id)sender {
+    if (self.timerOn){
+        return;
+    }
     if ([self.times count] == 0){
         return;
     }
+    if ([[self.DeleteButton currentTitle]isEqualToString:@"Delete"]){
+        [self.DeleteButton setTitle:@"Sure?" forState:UIControlStateNormal];
+        self.deleteTimer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(revertDeleteButton )userInfo:nil repeats:NO];
+        return;
+    }
+    [self.deleteTimer invalidate];
     [self.times removeLastObject];
+    [self.DeleteButton setTitle:@"Delete" forState:UIControlStateNormal];
     [self updateDisplays];
     
 }
