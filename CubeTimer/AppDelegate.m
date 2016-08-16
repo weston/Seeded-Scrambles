@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#include <stdlib.h>
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    unsigned int initialSeed = arc4random_uniform(UINT_MAX);
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *seedString = [NSString stringWithFormat:@"%u",initialSeed];
+    [defaults setObject:seedString forKey:@"seedValue"];
+    [defaults setBool:YES forKey:@"reseed"];
+    [defaults synchronize];
+    
     return YES;
 }
 

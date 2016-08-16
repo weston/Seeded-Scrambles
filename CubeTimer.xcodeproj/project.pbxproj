@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADC39E8F1D6058E2005294F5 /* SeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC39E8E1D6058E2005294F5 /* SeedController.m */; };
 		ADFF4F3E1D5FF7B600ABB0B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F3D1D5FF7B600ABB0B8 /* main.m */; };
 		ADFF4F411D5FF7B600ABB0B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F401D5FF7B600ABB0B8 /* AppDelegate.m */; };
 		ADFF4F441D5FF7B600ABB0B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF4F431D5FF7B600ABB0B8 /* ViewController.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADC39E8D1D6058E2005294F5 /* SeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeedController.h; sourceTree = "<group>"; };
+		ADC39E8E1D6058E2005294F5 /* SeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeedController.m; sourceTree = "<group>"; };
 		ADFF4F391D5FF7B600ABB0B8 /* CubeTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFF4F3D1D5FF7B600ABB0B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADFF4F3F1D5FF7B600ABB0B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				ADFF4F401D5FF7B600ABB0B8 /* AppDelegate.m */,
 				ADFF4F421D5FF7B600ABB0B8 /* ViewController.h */,
 				ADFF4F431D5FF7B600ABB0B8 /* ViewController.m */,
+				ADC39E8D1D6058E2005294F5 /* SeedController.h */,
+				ADC39E8E1D6058E2005294F5 /* SeedController.m */,
 				ADFF4F6F1D5FF88200ABB0B8 /* SeededNumberGenerator.h */,
 				ADFF4F701D5FF88200ABB0B8 /* SeededNumberGenerator.m */,
 				ADFF4F751D601BCA00ABB0B8 /* scrambler.h */,
@@ -319,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC39E8F1D6058E2005294F5 /* SeedController.m in Sources */,
 				ADFF4F841D60210E00ABB0B8 /* TwoPhaseScrambler.m in Sources */,
 				ADFF4F811D6020DF00ABB0B8 /* Search.m in Sources */,
 				ADFF4F711D5FF88200ABB0B8 /* SeededNumberGenerator.m in Sources */,

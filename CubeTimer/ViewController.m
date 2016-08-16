@@ -14,11 +14,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *TimeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *circle;
 @property (weak, nonatomic) IBOutlet UILabel *scrambleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *seedLabel;
+@property (weak, nonatomic) IBOutlet UITextView *TimeList;
+@property (weak, nonatomic) IBOutlet UILabel *avg5label;
+@property (weak, nonatomic) IBOutlet UILabel *avg12label;
+@property (weak, nonatomic) IBOutlet UILabel *NumSolvesLabel;
 @property int timerCountMillis;
 @property NSString *scrambleType;
 @property (strong, nonatomic) NSTimer *timer;
 @property (strong, nonatomic) NSTimer *startupTimer;
 @property (strong, nonatomic) scrambler *scrambleGen;
+@property (strong, nonatomic) NSMutableArray *times;
 @property BOOL timerOn;
 @property BOOL timerReady;
 @end
@@ -32,20 +38,30 @@
     self.scrambleType = @"3x3";
     
     self.scrambleGen = [[scrambler alloc]init];
-    [self.scrambleGen seedScramblers:@"hellowesatonpoo"];
-    [self updateScramble];
     
-    
-
-    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults boolForKey:@"reseed"]){
+        [self.scrambleGen seedScramblers:[defaults objectForKey:@"seedValue"]];
+        [self updateScramble];
+        [defaults setBool:NO forKey:@"reseed"];
+        [defaults synchronize];
+    }
+    self.times = [[NSMutableArray alloc]init];
+    NSLog(@"View did load\n");
 }
 
--(void) updateScramble{
+
+- (void) viewDidAppear:(BOOL)animated{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *seed = [defaults objectForKey:@"seedValue"];
+    [self.seedLabel setText:seed];
+    
+}
+- (void) updateScramble{
     NSString *newScramble = [self.scrambleGen getScrambleOfType:self.scrambleType];
     [self.scrambleLabel setText:newScramble];
-    
-    
 }
+
 - (IBAction)StartButtonPressed:(id)sender {
     if (self.timerOn){
         //Stop Timer
@@ -54,6 +70,7 @@
         self.timerOn = NO;
         self.timerReady = NO;
         [self.TimeLabel setText:[self formatMilliseconds:self.timerCountMillis]];
+        [self addTime:self.timerCountMillis];
         self.timerCountMillis = 0;
         [self.timer invalidate];
         [self updateScramble];
@@ -61,7 +78,6 @@
         [self.circle setImage:[UIImage imageNamed: @"red_circle.png"]];
         self.startupTimer = [NSTimer scheduledTimerWithTimeInterval:0.75 target:self selector:@selector(setTimerReady)userInfo:nil repeats:NO];
         [[NSRunLoop currentRunLoop] addTimer: self.startupTimer forMode: NSDefaultRunLoopMode];
-        
     }
 }
 
@@ -72,8 +88,8 @@
 }
 
 - (void) updateTimerDisplay{
-    self.timerCountMillis += 1;
-    if (self.timerCountMillis % 37 == 0){
+    self.timerCountMillis += 3;
+    if (self.timerCountMillis % 23 == 0){
         [self.TimeLabel setText:[self formatMilliseconds:self.timerCountMillis]];
     }
 
@@ -86,7 +102,7 @@
         //Start Timer
         NSLog(@"START TIMER!");
         self.timerOn = YES;
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(updateTimerDisplay )userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(updateTimerDisplay )userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer: self.timer forMode: NSDefaultRunLoopMode];
     }else{
         [self.startupTimer invalidate];
@@ -94,6 +110,33 @@
     }
 }
 
+
+- (void) addTime: (int) timeMillis{
+    NSNumber *num = [NSNumber numberWithInt:timeMillis];
+    [self.times addObject:num];
+    [self updateDisplays];
+}
+
+- (NSString *) computeAverageOf: (int) numSolves{
+    if ([self.times count] < numSolves || numSolves < 3){
+        return @"--";
+    }
+    int min = INT_MAX;
+    int max = INT_MIN;
+    int total = 0;
+    for(int i = (int)[self.times count] - numSolves; i < [self.times count]; i++){
+        NSNumber *c = [self.times objectAtIndex:i];
+        int current = (int)[c integerValue];
+        total += current;
+        if (current < min){
+            min = current;
+        }
+        if (current > max){
+            max = current;
+        }
+    }
+    return [self formatMilliseconds:(total - (max + min))/(numSolves - 2)];
+}
 
 - (NSString *)formatMilliseconds:(int)milliseconds{
     int millis = milliseconds % 1000;
@@ -115,6 +158,40 @@
     }
     return time;
 }
+
+-(void) updateDisplays{
+    [self.avg5label setText:[self computeAverageOf:5]];
+    [self.avg12label setText:[self computeAverageOf:12]];
+    [self.NumSolvesLabel setText:[NSString stringWithFormat:@"%lu",(unsigned long)[self.times count]]];
+    
+    NSMutableString *list = [NSMutableString stringWithString:@""];
+    for (int i = 0; i < [self.times count]; i++){
+        if (i > 0){
+            [list appendString:@", "];
+        }
+        int num = (int)[[self.times objectAtIndex:i] integerValue];
+        [list appendString: [self formatMilliseconds:num]];
+    }
+    [self.TimeList setText: list];
+}
+
+- (IBAction)resetPressed:(id)sender {
+    self.times = [[NSMutableArray alloc]init];
+    [self.TimeLabel setText:@"0.000"];
+    [self updateDisplays];
+    [self updateScramble];
+    
+}
+
+- (IBAction)deleteLastPressed:(id)sender {
+    if ([self.times count] == 0){
+        return;
+    }
+    [self.times removeLastObject];
+    [self updateDisplays];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
