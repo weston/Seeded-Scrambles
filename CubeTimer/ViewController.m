@@ -44,12 +44,7 @@
     self.scrambleGen = [[scrambler alloc]init];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if ([defaults boolForKey:@"reseed"]){
-        [self.scrambleGen seedScramblers:[defaults objectForKey:@"seedValue"]];
-        [self updateScramble];
-        [defaults setBool:NO forKey:@"reseed"];
-        [defaults synchronize];
-    }
+
     self.times = [[NSMutableArray alloc]init];
     NSLog(@"View did load\n");
 }
@@ -58,6 +53,12 @@
 - (void) viewDidAppear:(BOOL)animated{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *seed = [defaults objectForKey:@"seedValue"];
+    if ([defaults boolForKey:@"reseed"]){
+        [self.scrambleGen seedScramblers:seed];
+        [self updateScramble];
+        [defaults setBool:NO forKey:@"reseed"];
+        [defaults synchronize];
+    }
     [self.seedLabel setText:seed];
     
 }
